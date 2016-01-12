@@ -1,4 +1,7 @@
 <?php
+if (!defined('__DIR__'))
+	define('__DIR__', dirname(__FILE__));
+
 ini_set('max_execution_time', 60);
 
 // The bigger this number, the longer the request will take
@@ -28,4 +31,4 @@ for ($i = 0; $i < $max; $i++) {
 	}
 }
 
-echo true;
+echo rand(1, 100);

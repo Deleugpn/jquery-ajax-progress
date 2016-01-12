@@ -1,4 +1,6 @@
 <?php
+if (!defined('__DIR__'))
+	define('__DIR__', dirname(__FILE__));
 // Make a request to another domain so browser doesn't block you
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST');

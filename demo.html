@@ -53,9 +53,10 @@
                 method: 'GET',
                 url: 'server/progress.php',
                 dataType: 'json',
-                success: function () {
+                success: function (data) {
                     request.clearInterval();
                     request.setStatus(100);
+                    alert('The main request has finished and the random number generated is ' + data);
                 },
                 error: function () {
                     request.setStatus(0);
